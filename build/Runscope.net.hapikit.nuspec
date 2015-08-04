@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Runscope.net.hapikit</id>
+    <version>0.9.0-alpha</version>
+    <title>Runscope.net.hapikit</title>
+    <authors>Darrel Miller</authors>
+    <owners>Runscope Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Runscope API client tooling</description>
+    <copyright>Copyright 2014</copyright>
+    <releaseNotes>Added missing JSON dependendency</releaseNotes>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="Hapikit.net" version="0.1.0-alpha" />
+    </dependencies>
+  </metadata>
+
+  <files>
+     <file src="..\artifacts\Runscope.WebPack\lib\**\Runscope.WebPack.dll" target="lib"  />
+  </files>
+</package>

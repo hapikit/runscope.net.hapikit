@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47E95A65-EE04-4540-A06C-D04728C3CAC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Runscope</RootNamespace>
+    <AssemblyName>Runscope.net.hapikit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Links\AccountLink.cs" />
+    <Compile Include="Links\CollectionsLink.cs" />
+    <Compile Include="Links\HomeLink.cs" />
+    <Compile Include="Links\TestRunLink.cs" />
+    <Compile Include="Links\TestResultsLink.cs" />
+    <Compile Include="Links\TestsLink.cs" />
+    <Compile Include="Links\TestTriggerLink.cs" />
+    <Compile Include="Messages\Account.cs" />
+    <Compile Include="Messages\Collection.cs" />
+    <Compile Include="Messages\Bucket.cs" />
+    <Compile Include="Links\BucketsLink.cs" />
+    <Compile Include="Links\MessagesLink.cs" />
+    <Compile Include="Messages\Error.cs" />
+    <Compile Include="Messages\Home.cs" />
+    <Compile Include="Messages\NewMessageResponse.cs" />
+    <Compile Include="Messages\Team.cs" />
+    <Compile Include="Messages\Test.cs" />
+    <Compile Include="Messages\Meta.cs" />
+    <Compile Include="Messages\TestRun.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Messages\RunscopeMessage.cs" />
+    <Compile Include="Messages\RunscopeRequest.cs" />
+    <Compile Include="Messages\RunscopeResponse.cs" />
+    <Compile Include="Links\SharedMessageLink.cs" />
+    <Compile Include="RunscopeApiDocument.cs" />
+    <Compile Include="UriExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Messages\Warning.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Hapikit.net">
+      <HintPath>..\..\packages\Hapikit.net.0.1.0-alpha\lib\portable-net45+sl5+wp8+win8+wpa81+MonoTouch1+MonoAndroid1\Hapikit.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

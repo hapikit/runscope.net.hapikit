@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runscope.net.hapikit", "src\Runscope.net.hapikit\Runscope.net.hapikit.csproj", "{47E95A65-EE04-4540-A06C-D04728C3CAC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14E544CC-8AE7-481F-8E93-3BF3DD07B0FD}"
+	ProjectSection(SolutionItems) = preProject
+		License.txt = License.txt
+		readme.md = readme.md
+		ReleaseNotes.md = ReleaseNotes.md
+		build\Runscope.net.hapikit.nuspec = build\Runscope.net.hapikit.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runscope.sample", "test\Runscope.sample\Runscope.sample.csproj", "{E7BF7E19-A37C-46CD-A284-8BE9D9B19D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runscope.tests", "test\Runscope..net.Tests\Runscope.tests.csproj", "{C941CD8F-6F7E-47EB-8F37-68D65043D101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E95A65-EE04-4540-A06C-D04728C3CAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E95A65-EE04-4540-A06C-D04728C3CAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E95A65-EE04-4540-A06C-D04728C3CAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E95A65-EE04-4540-A06C-D04728C3CAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BF7E19-A37C-46CD-A284-8BE9D9B19D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BF7E19-A37C-46CD-A284-8BE9D9B19D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BF7E19-A37C-46CD-A284-8BE9D9B19D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BF7E19-A37C-46CD-A284-8BE9D9B19D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C941CD8F-6F7E-47EB-8F37-68D65043D101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C941CD8F-6F7E-47EB-8F37-68D65043D101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C941CD8F-6F7E-47EB-8F37-68D65043D101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C941CD8F-6F7E-47EB-8F37-68D65043D101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
